@@ -1,0 +1,19 @@
+#textbox {
+    width: calc(100vw - 1.5em);
+    font-family: Lucida Console, Courier, monospace;
+    font-size: medium;
+}
+
+#button_table {
+    margin-top: 1em;
+
+    border: 0;
+}
+
+.button {
+    margin: 0 0 0 .5em;
+    line-height: 1em;
+
+    height: 1.5em;
+    font-size: medium;
+}

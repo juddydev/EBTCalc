@@ -1,0 +1,45 @@
+{
+  "name": "EBTCalc",
+  "version": "1.0.25",
+  "description": "Programmable RPN Calculator",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "npm run build-windows && npm run build-linux",
+    "build-windows": "electron-packager . --icon=resources/calc.ico --out ../EBTCalc-build --overwrite --platform=win32 --asar --extraResource=resources/calc.ico --extraResource=resources/question_mark.png --ignore=setup",
+    "build-linux": "electron-packager . --icon=resources/calc.png --extra-resource=resources/calc.png --out ../EBTCalc-build --overwrite --platform=linux --asar --extraResource=resources/question_mark.png --ignore=setup",
+    "test": "nyc mocha"
+  },
+  "config": {
+    "githubUrl": "https://github.com/juddydev/EBTCalc",
+    "ebtCalcUrl": "https://play.google.com/store/apps/details?id=com.ericbt.rpncalcpaid"
+  },
+  "repository": "https://github.com/juddydev/EBTCalcDesktop",
+  "keywords": [],
+  "author": "eric@terrell.info",
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "@electron/packager": "^18.3.3",
+    "chai": "^4.5.0",
+    "electron": "^31.3.1",
+    "mocha": "^10.7.3",
+    "nyc": "^15.1.0",
+    "sinon": "^18.0.0",
+    "spectron": "^10.0.1"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.1.2",
+    "bignumber.js": "^9.1.2",
+    "chart.js": "^3.9.1",
+    "espree": "^9.6.1",
+    "prettier": "^2.8.8",
+    "pretty-data": "^0.40.0",
+    "serialize-javascript": "^6.0.2"
+  },
+  "mocha": {
+    "spec": [
+      "./test/unit",
+      "./test/integration"
+    ]
+  }
+}

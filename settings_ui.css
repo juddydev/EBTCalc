@@ -1,0 +1,22 @@
+table, th, td {
+    border: 1px black solid;
+}
+
+input {
+    font-size: large;
+}
+
+button {
+    margin-top: 2em;
+    margin-left: 0.5em;
+    height: 1.5em;
+    font-size: medium;
+}
+
+th {
+    background-color: lightgrey;
+}
+
+#cancel {
+    margin-left: 1em;
+}

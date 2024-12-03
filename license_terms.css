@@ -1,0 +1,16 @@
+#license_terms {
+    width: 100%;
+    height: calc(100vh - 11em);
+
+    overflow-y: auto;
+}
+
+.button {
+    margin: 0 0 0 .5em;
+    font-size: medium;
+    height: 1.5em;
+}
+
+#ok {
+    margin-top: 2em;
+}

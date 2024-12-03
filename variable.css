@@ -1,0 +1,28 @@
+table {
+    border: 0;
+}
+
+#textbox {
+    width: calc(100vw - 3em);
+    font-family: Lucida Console, Courier, monospace;
+    font-size: medium;
+}
+
+#dropdown {
+    width: calc(100vw - 3em);
+    font-family: Lucida Console, Courier, monospace;
+    font-size: medium;
+}
+
+#button_table {
+    margin-top: 1em;
+}
+
+#line_1, #line_2 {
+    margin-top: 1em;
+}
+
+.button {
+    margin: 0 0 0 .5em;
+    font-size: medium;
+}

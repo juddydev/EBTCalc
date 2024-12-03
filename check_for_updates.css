@@ -1,0 +1,17 @@
+.button {
+    margin: 0 0 0 .5em;
+    font-size: medium;
+}
+
+#action_buttons {
+    margin-top: 2em;
+}
+
+#close {
+    margin-left: 1em;
+}
+
+#current_version,
+#obsolete_version {
+    display: none;
+}
